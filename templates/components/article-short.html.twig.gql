@@ -1,0 +1,14 @@
+fragment ArticleShort on NodeArticle {
+  title:entityLabel
+  url:entityUrl {
+    path
+  }
+  author:uid {
+    entity {
+      url:entityUrl {
+        path
+      }
+      name
+    }
+  }
+}

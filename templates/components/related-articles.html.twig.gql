@@ -1,0 +1,8 @@
+fragment RelatedArticles on NodeArticle {
+  title:entityLabel
+  related:relatedArticles {
+    results {
+      ... ArticleShort
+    }
+  }
+}

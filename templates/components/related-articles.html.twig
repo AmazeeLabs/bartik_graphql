@@ -1,0 +1,8 @@
+{% if related %}
+  <h3>If you liked {{ title }} you might also like:</h3>
+  <ul>
+    {% for article in related.results %}
+      <li>{% include "@bartik_graphql/components/article-short.html.twig" with article only%}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

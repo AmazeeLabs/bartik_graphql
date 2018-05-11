@@ -1,0 +1,24 @@
+{#graphql
+query {
+  admin:userById(id: "1") {
+    name
+  }
+  bugs:route(path: "https://www.drupal.org/project/drupal") {
+    ... on ExternalUrl {
+      request {
+        xml {
+          xpath(query: "//div[contains(@class, 'issue-cockpit-1')]//a[1]") {
+            content
+          }
+        }
+      }
+    }
+  }
+}
+#}
+{% extends "@bartik/block.html.twig" %}
+{% block content %}
+  <div{{ content_attributes.addClass('content') }}>
+    {{ content }}, one guy called {{ graphql.data.admin.name }} and {{ graphql.data.bugs.request.xml.xpath[0].content }} bugs.
+  </div>
+{% endblock %}
