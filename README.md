@@ -14,5 +14,6 @@ The Amazeenar's recording is available on our Youtube channel:
 
 [![Amazeenar - Soft decoupling Drupal](https://img.youtube.com/vi/QsmeXMZ0foM/0.jpg)](https://www.youtube.com/watch?v=QsmeXMZ0foM)
 
-And the [PDF Slides](slides.pdf) are included in this repository. If you have questions or need help, feel
-free to join the [#graphql channel on drupal.slack.com](https://drupal.slack.com/messages/C6LMJ0ZAT).
+The [PDF Slides](slides.pdf) are included in this repository.
+
+If you have questions or need help, feel free to join the [#graphql channel on drupal.slack.com](https://drupal.slack.com/messages/C6LMJ0ZAT).
